@@ -255,7 +255,7 @@ SOFTWARE.
 
 ## 👥 Authors
 
-- **[Your Name]** - *Initial work*
+- **Prokythera** - *Initial work*
 
 ## 🙏 Acknowledgments
 
