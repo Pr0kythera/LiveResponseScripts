@@ -22,6 +22,8 @@ A PowerShell script for capturing network packets during incident response using
 
 ## 🎯 Overview
 
+![](https://github.com/Pr0kythera/LiveResponseScripts/blob/main/Recording%202025-09-15%20212956.gif)
+
 This tool enables security analysts and incident responders to quickly capture network traffic on remote Windows endpoints through Microsoft Defender for Endpoint's Live Response feature. It leverages the built-in Windows Packet Monitor (Pktmon) utility to capture packets and automatically converts them to PCAP format for analysis in Wireshark or other network analysis tools.
 
 ### Why This Tool?
