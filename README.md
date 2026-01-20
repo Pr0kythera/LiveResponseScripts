@@ -20,7 +20,7 @@ A PowerShell script for capturing network packets during incident response using
 - [Contributing](#contributing)
 - [License](#license)
 
-## 🎯 Overview
+## Overview
 
 ![](https://github.com/Pr0kythera/LiveResponseScripts/blob/main/Recording%202025-09-15%20212956.gif)
 
@@ -36,17 +36,17 @@ During incident response, you often need to:
 
 This script solves these challenges by providing a simple, parameter-driven interface to Pktmon that works seamlessly with Defender Live Response.
 
-## ✨ Features
+## Features
 
-- **🔍 Flexible Filtering**: Capture all traffic or filter by specific IP addresses and/or ports
-- **⏱️ Configurable Duration**: Choose between 1, 5, or 15-minute capture windows
-- **📦 Full Packet Capture**: Captures complete packets, not just headers (using `--pkt-size 0`)
-- **🔄 Automatic Conversion**: Converts native ETL format to PCAP for Wireshark compatibility
-- **📊 Progress Tracking**: Real-time progress indicators during capture
-- **🧹 Auto-cleanup**: Automatically removes filters after capture
-- **📝 Detailed Logging**: Comprehensive status messages for troubleshooting
+- ** Flexible Filtering**: Capture all traffic or filter by specific IP addresses and/or ports
+- ** Configurable Duration**: Choose between 1, 5, or 15-minute capture windows
+- ** Full Packet Capture**: Captures complete packets, not just headers (using `--pkt-size 0`)
+- ** Automatic Conversion**: Converts native ETL format to PCAP for Wireshark compatibility
+- ** Progress Tracking**: Real-time progress indicators during capture
+- ** Auto-cleanup**: Automatically removes filters after capture
+- ** Detailed Logging**: Comprehensive status messages for troubleshooting
 
-## 📋 Requirements
+## Requirements
 
 ### Endpoint Requirements
 - **Windows Version**: Windows 10 1809+ or Windows Server 2019+
@@ -58,7 +58,7 @@ This script solves these challenges by providing a simple, parameter-driven inte
 - **Live Response**: Enabled in Defender settings
 - **Permissions**: Security Administrator or Global Administrator role
 
-## 🚀 Installation
+## Installation
 
 ### Step 1: Download the Script
 ```bash
@@ -78,7 +78,7 @@ curl -O https://raw.githubusercontent.com/yourusername/defender-live-response-pc
 5. Add a description (optional)
 6. Click **Submit**
 
-## 💻 Usage
+## Usage
 
 ### Basic Syntax
 
@@ -94,7 +94,7 @@ run LiveResponse-PacketCapture.ps1 [-TargetIP <string>] [-TargetPort <int>] [-Du
 4. Wait for the session to establish
 5. Run the packet capture script with desired parameters
 
-## 📝 Parameters
+##  Parameters
 
 | Parameter | Type | Required | Default | Description |
 |-----------|------|----------|---------|-------------|
@@ -102,7 +102,7 @@ run LiveResponse-PacketCapture.ps1 [-TargetIP <string>] [-TargetPort <int>] [-Du
 | `-TargetPort` | Integer | No | None | Filter capture to traffic on this port |
 | `-Duration` | Integer | No | 60 | Capture duration in seconds (60, 300, or 900) |
 
-## 📚 Examples
+## Examples
 
 ### Example 1: Basic Capture
 Capture all network traffic for 60 seconds:
@@ -141,7 +141,7 @@ run LiveResponse-PacketCapture.ps1 -TargetIP "185.220.101.45" -Duration 300
 getfile "IR_Capture_20241120_143022.pcap"
 ```
 
-## 📁 Output Files
+## Output Files
 
 The script generates two files:
 
@@ -164,7 +164,7 @@ getfile "IR_Capture_20241120_143022.pcap"
 getfile "IR_Capture_20241120_143022.etl"
 ```
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -202,7 +202,7 @@ pktmon stop
 pktmon filter remove
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -220,7 +220,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - Create complementary analysis scripts
 - Add support for additional Pktmon filters
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see below for details:
 
@@ -248,18 +248,18 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## 🔗 Resources
+## Resources
 
 - [Microsoft Defender for Endpoint Documentation](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/)
 - [Live Response Commands](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/live-response)
 - [Packet Monitor (Pktmon) Documentation](https://docs.microsoft.com/en-us/windows-server/networking/technologies/pktmon/pktmon)
 - [Wireshark](https://www.wireshark.org/)
 
-## 👥 Authors
+## Authors
 
 - **Prokythera** - *Initial work*
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Microsoft Defender for Endpoint team for Live Response capability
 - Windows Networking team for the Pktmon utility
